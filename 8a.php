@@ -3,6 +3,6 @@ program8a.php
  
 <?php  if(isset($_POST['submit'])) // it checks if the input submit is filled 
 {  
-$num1 = $_POST['num1'];   $num2 = $_POST['num2'];   if(is_numeric($num1)  andis_numeric($num1) )  { echo "<tr><td> Addition :</td><td><p>".($num1+$num2)."</p></td>"; echo "<tr><td> Subtraction :</td><td><p>  ".($num1-$num2)."</p></td>"; echo "<tr><td> Multiplication :</td><td><p>".($num1*$num2)."</p></td>"; echo "<tr><td>Division :</td><td><p> ".($num1/$num2)."</p></td>"; echo "</table>";  } else { echo"<script type='text/javascript' > alert(' ENTER VALID NUMBER');</script>";     } 
+$num1 = $_POST['num1'];   $num2 = $_POST['num2'];   if(is_numeric($num1)  and is_numeric($num1) )  { echo "<tr><td> Addition :</td><td><p>".($num1+$num2)."</p></td>"; echo "<tr><td> Subtraction :</td><td><p>  ".($num1-$num2)."</p></td>"; echo "<tr><td> Multiplication :</td><td><p>".($num1*$num2)."</p></td>"; echo "<tr><td>Division :</td><td><p> ".($num1/$num2)."</p></td>"; echo "</table>";  } else { echo"<script type='text/javascript' > alert(' ENTER VALID NUMBER');</script>";     } 
  
 }   ?> </body> </html> 
