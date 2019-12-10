@@ -1,24 +1,24 @@
-<!doctype html>
+<!DOCUMENT HTML>
 <html>
 	<head>
-		<style>
-			table, tr, td{
+		<title>pgm2</title>
+	<style>
+		table,tr,td
+			{
 				border:1px solid black;
-				width:33%;
-				text-align:center;
-				background-color:LightBlue;
 				border-collapse:collapse;
+				width:33%;
+				height:50%;
+			}
+		table{margin:auto;}
+	</style>
+	<script>
+		document.write("<table><tr><th colspan='3'>Cube and squares</th></tr>");
+		document.write("<tr><td>Number</td><td>Square</td><td>Cube</td></tr>");
+		for(var n=0;n<=10;n++)
+		{
+			document.write("<tr><td>"+n+"</td><td>"+n*n+"</td><td>"+n*n*n+"</td></tr>");
 		}
-		table{
-			margin:auto;
-		}
-		</style>
-		<script>
-			document.write("<table><tr><th colspan='3'>NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AN CUBES</th></tr>");
-			for(var n = 0; n <= 10; n++)
-				document.write("<tr><td>"+n+"</td><td>"+n*n+"</td><td>"+n*n*n+"</td></tr>");
-			document.write("</table>");
-		</script>
-	</head>
-</html> 
-	
+		document.write("</table>");
+	</script>
+</html>
